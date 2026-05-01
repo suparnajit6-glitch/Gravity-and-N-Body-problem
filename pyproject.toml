@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gravity-nbody"
+version = "0.1.0"
+description = "Gravity and N-body simulation experiments."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "astropy",
+    "astroquery",
+    "matplotlib",
+    "numpy",
+    "scipy",
+]
+
+[project.scripts]
+alpha-centauri-sim = "gravity_nbody.alpha_centauri:main"
+n-body-sim = "gravity_nbody.n_body_problem:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

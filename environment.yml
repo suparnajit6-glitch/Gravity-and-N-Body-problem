@@ -3,7 +3,9 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - astropy
   - asttokens=3.0.0=pyhd8ed1ab_1
+  - astroquery
   - blas=1.0=mkl
   - bzip2=1.0.8=h2bbff1b_6
   - ca-certificates=2025.11.4=haa95532_0
